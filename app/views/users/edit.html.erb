@@ -1,6 +1,10 @@
 <h1>Editing User</h1>
 
-<%= render 'form' %>
+<%= form_for @user do |f| %>
 
+  Name: <%= f.text_field :name %>
+  Email: <%= f.text_field :email %>
+  <%= f.submit "Submit" %>
+  <% end %>
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
