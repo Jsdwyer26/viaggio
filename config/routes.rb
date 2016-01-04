@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :posts
   resources :cities
 
-
 =begin
 
   Prefix Verb   URI Pattern                Controller#Action
