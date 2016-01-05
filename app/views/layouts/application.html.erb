@@ -9,12 +9,17 @@
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-top">
-  <div class="container">
-	<% if current_user %>
-	  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-	<% else %>
-	  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-	<% end %>
+  <div class="row" id="nav-row">
+    <div class="col-sm-6" id="nav-title">
+      <%= "Viaggo" %>
+    </div>
+    <div class="col-sm-5" id="nav-login">
+    	<% if current_user %>
+    	  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+    	<% else %>
+    	  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+    	<% end %>
+    </div>
   </div>
 </nav>
 
