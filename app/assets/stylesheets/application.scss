@@ -21,7 +21,23 @@
 	width: 100%;
 	margin: 0 auto;
 }
-
+.city-small {
+	width: 95%;
+	border-radius: 5%; 
+}
+.banner {
+	background-image: url("hong-kong-large.jpg");
+	background-repeat: no-repeat;
+  background-position: right top;
+  width: 100%;
+  height: 500px; 
+}
+.call-to-action {
+	font-size: 4em;
+	color: white;
+	text-align: center; 
+	margin: 0 auto; 
+}
 #nav-row {
 	margin-left: 20px;
 }

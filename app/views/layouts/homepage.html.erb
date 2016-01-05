@@ -1,48 +1,51 @@
-<div>
-	<%= image_tag "hong-kong-large.jpg", class: "city-banner" %>
+<div class="banner">
+	<div class="call-to-action">
+		<br>
+		<p>Explore cities and add your tips!</p>
+	</div>
 </div>
 <br>
 <center>
 <div class="row">
 	<div class="col-md-2 col-md-offset-1">
 		<div>
+
 			<%= image_tag "san-francisco-small.jpg", class: "city-small" %>
 		</div>
 		<div>
-			<h3>San Francisco</h3>
+			<h3><%= link_to "San Francisco", "/cities/@sanfrancisco"%></h3>
 		</div>
 	</div>
 	<div class="col-md-2">
-	<div>
+		<div>
 			<%= image_tag "seattle-small.jpg", class: "city-small" %>
 		</div>
 		<div>
-			<h3>Seattle</h3>
+			<h3><%= link_to "Seattle", "/cities/@seattle"%></h3>
 		</div>
 	</div>
 	<div class="col-md-2">
-	<div>
+		<div>
 			<%= image_tag "santa-barbara-small.jpg", class: "city-small" %>
 		</div>
 		<div>
-			<h3>Santa Barbara</h3>
+			<h3><%= link_to "Santa Barbara", "/cities/@santabarbara"%></h3>
 		</div>
 	</div>
 	<div class="col-md-2">
-	<div>
+		<div>
 			<%= image_tag "miami-small.jpg", class: "city-small" %>
 		</div>
 		<div>
-			<h3>Miami</h3>
+			<h3><%= link_to "Miami", "/cities/@miami"%></h3>
 		</div>
 	</div>
-
 	<div class="col-md-2">
 		<div>
 			<%= image_tag "new-york-small.jpg", class: "city-small" %>
 		</div>
 		<div>
-			<h3>New York</h3>
-	  </div>
-	 </div>
-</center>
+			<h3><%= link_to "New York", "/cities/@newyork"%></h3>
+		</div>
+	</div>
+	</center>
