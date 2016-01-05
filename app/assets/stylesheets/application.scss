@@ -16,8 +16,28 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#nav-row {
+	margin-left: 20px;
+}
+
+#nav-title {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#nav-login {
+	margin-top: 15px;
+	text-align: right;
+}
+
 body {
 	margin-top: 75px;
 	margin-left: 25px;
 	background-color: #f8f8f8;
+}
+
+.col-xs-2 {
+	margin-top: 15px;
+	margin-left: 18px;
 }
