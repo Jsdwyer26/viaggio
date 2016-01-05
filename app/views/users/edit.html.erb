@@ -5,6 +5,7 @@
  <div class="col-sm-6">
   Name: <%= f.text_field :name, :class =>"form-control"%>
   Email: <%= f.text_field :email, :class =>"form-control" %>
+  <%= f.file_field :image %>
   Current City: <%= f.text_field :current_city, :class =>"form-control"%>
   <%= f.submit "Submit", :class =>"btn btn-primary" %>
   <% end %>

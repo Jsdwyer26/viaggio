@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
   @user = current_user
-  user_params = params.require(:user).permit(:name,:email,:current_city)
+  user_params = params.require(:user).permit(:name,:email,:current_city,:image)
   if @user.update_attributes(user_params)
     redirect_to user_path(@user)
   else 
@@ -64,6 +64,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email, :current_city, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :current_city, :image, :password, :password_confirmation)
     end
 end

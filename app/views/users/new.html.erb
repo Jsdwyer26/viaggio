@@ -1,9 +1,10 @@
 <h1>Signup!</h1>
 
-<%= form_for :user, url: '/users' do |f| %>
+<%= form_for :user, url: '/users', html: { multipart: true } do |f| %>
 
   Name: <%= f.text_field :name %>
   Email: <%= f.text_field :email %>
+  <%= f.file_field :image %>
   Current City: <%= f.text_field :current_city%>
   Password: <%= f.password_field :password %>
   Password Confirmation: <%= f.password_field :password_confirmation %>
