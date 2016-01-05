@@ -13,6 +13,16 @@ class ApplicationController < ActionController::Base
   end
 
   def homepage
+    @sanfrancisco = City.find_by_name('San Francisco').id
+
+    @seattle = City.find_by_name('Seattle').id
+
+    @santabarbara = City.find_by_name('Santa Barbara').id
+
+    @miami = City.find_by_name('Miami').id
+
+    @newyork = City.find_by_name('New York').id
+    
     render template: "layouts/homepage.html.erb"
   end
 
