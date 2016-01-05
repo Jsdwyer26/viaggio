@@ -5,6 +5,9 @@
   <div class="form-group">  
     <%= f.text_field :nickName, class: "form-control focus",  placeholder: "nickname" %>
   </div>
+  <div class="form-group">  
+		<%= f.file_field :image %>
+	</div>
   <div class="form-group">
     <%= f.submit "Update", class: "btn btn-primary" %>
   </div>

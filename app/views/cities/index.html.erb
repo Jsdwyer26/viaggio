@@ -11,6 +11,9 @@
 
   <tbody>
     <% @cities.each do |city| %>
+     <tr>
+        <td><%= image_tag "#{city.image}(:large)" %></td>
+      </tr>
       <tr>
         <td><%= "Name: #{city.name}" %></td>
       </tr>
