@@ -19,6 +19,7 @@
 			<div class="media-body">
 				<h4 class="media-heading"><%= link_to p.title, post_path(p.id) %></h4>
 				<p><%= p.body %></p>
+				<font size="1"><%= p.created_at %></font>
 			</div>
 		</div>
 	<% end %>
