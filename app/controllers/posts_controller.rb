@@ -7,6 +7,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @cities = City.all
   end
 
 
@@ -17,6 +18,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @city_names = City.all.pluck(:name)
   end
 
 
@@ -27,8 +29,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    post_params = params.require(:post).permit(:title, :body)
+    post_params = params.require(:post).permit(:title, :body, :city_id)
     @post = Post.new(post_params)
+    @post.city_id = City.find_by_name(post_params['city_id']).id
     @post.user_id = current_user.id
     respond_to do |format|
       if @post.save

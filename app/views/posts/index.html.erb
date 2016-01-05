@@ -17,6 +17,10 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <td> <%= post.title %> </td>
+        <td> <% if !post.city_id.nil? %> <%= City.find(post.city_id).name %> <% end %> </td>
+      </tr>
+      <tr>
         <td><%= post.title.titleize %></td>
         <td><%= link_to 'Show', post, class: "btn" %></td>
         <td><%= link_to 'Edit', edit_post_path(post), class: "btn" %></td>
