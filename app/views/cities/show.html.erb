@@ -1,4 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="row" id="city-name"><%= @city.name %></div>
+<div class="row"><%= "Nickname: #{@city.nickName}" %></div>
+
+<div class="row">
+	<%= link_to 'New Post', new_post_path, class: "btn btn-primary" %>
+</div>
+
+<div class="row">
+	<% @posts.each do |p| %>
+		<%= p.title %>
+	<% end %>
+</div>
+
+
+
 
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
