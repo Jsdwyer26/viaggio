@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
 
   def show
+
   end
 
 
@@ -18,7 +19,7 @@ class PostsController < ApplicationController
 
   def edit
     #unless current_user == @post.user 
-      redirect_to "/users/#{current_user.id}"
+      #redirect_to "/users/#{current_user.id}"
     #end
   end
 
@@ -38,6 +39,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    post_params = params.require(:post).permit(:title, :body)
     #if current_user == @post.user
       respond_to do |format|
         if @post.update(post_params)
