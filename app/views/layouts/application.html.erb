@@ -9,24 +9,39 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-top">
-  <div class="row" id="nav-row">
-    <div class="col-sm-6" id="nav-title">
 
-      <a href="/" class="pull-left"> <%= image_tag "logo.png" %></a>
-      
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href="/"><%= image_tag "logo.png" %></a>
+    </div>    
+        <ul class="nav navbar-nav navbar-left">
+        <% if current_user %>
+            <li class="navbar-text">Welcome, <%= current_user.name.titleize %>!</li>
+        <% end %>    
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user %>
+            <li><%= link_to "Profile", user_path(current_user) %></li>
+            <li><%= link_to "Logout", '/logout' %></li>
+          <% else %>  
+            <li><%= link_to 'Login', '/login' %></li> 
+            <li><%= link_to 'Signup', '/signup' %></li>
+          <% end %>
+
+        </ul>
+        
     </div>
-    <div class="col-sm-5" id="nav-login">
-    	<% if current_user %>
-    	  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-    	<% else %>
-    	  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-    	<% end %>
-    </div>
-  </div>
+  </div>  
 </nav>
 
 <%= yield %>
 
 </body>
 </html>
+
+
+      
+    
+     
+   
