@@ -5,7 +5,8 @@
 	<%= @city.name %>
 </div>
 <div class="row">
-	<%= "Nickname: #{@city.nickName}" %>
+	<%= 'aka "'+@city.nickName+'" / ' %>
+	<%= link_to "WikiTravel", "http://wikitravel.org/en/#{@city.name}" %><%= " / " %>
 	<%= link_to 'New Post', new_post_path, class: "btn btn-primary btn-xs" %>
 </div>
 <br>
