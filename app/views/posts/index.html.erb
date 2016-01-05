@@ -7,7 +7,6 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Post</th>
       <th>Show</th>
       <th>Edit</th>
       <th>Destroy</th>
@@ -18,7 +17,6 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title.titleize %></td>
-        <td><%= post.body %></td>
         <td><%= link_to 'Show', post, class: "btn btn-sm" %></td>
         <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm" %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
