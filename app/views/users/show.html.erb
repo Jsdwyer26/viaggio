@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag @user.image.url(:large) %>
+      <div class="caption">
+      <h3><%= current_user.name %> </h3>
+        <p><%= current_user.current_city %></p>
+        <p><%= link_to 'Edit', edit_user_path(@user), :class =>"btn btn-primary"%></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>

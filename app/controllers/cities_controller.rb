@@ -10,6 +10,8 @@ class CitiesController < ApplicationController
   # GET /cities/1
   # GET /cities/1.json
   def show
+    @city = City.find(params[:id])
+    @posts = Post.where(city_id: @city.id)
   end
 
   # GET /cities/new
@@ -19,6 +21,7 @@ class CitiesController < ApplicationController
 
   # GET /cities/1/edit
   def edit
+    @city = City.find(params[:id])
   end
 
   # POST /cities
@@ -41,6 +44,8 @@ class CitiesController < ApplicationController
   # PATCH/PUT /cities/1.json
   def update
     respond_to do |format|
+      city_params = params.require(:city).permit(:name, :nickName)
+      @city = City.find(params[:id])
       if @city.update(city_params)
         format.html { redirect_to @city, notice: 'City was successfully updated.' }
         format.json { render :show, status: :ok, location: @city }
@@ -54,6 +59,7 @@ class CitiesController < ApplicationController
   # DELETE /cities/1
   # DELETE /cities/1.json
   def destroy
+    @city = City.find(params[:id])
     @city.destroy
     respond_to do |format|
       format.html { redirect_to cities_url, notice: 'City was successfully destroyed.' }
@@ -62,9 +68,7 @@ class CitiesController < ApplicationController
   end
 
   private
-
-    # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
-      params[:city]
+      params.require(:city).permit(:name, :nickName)
     end
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get '/' => 'application#homepage'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
@@ -6,11 +7,11 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
   put 'users/:id' => 'users#update'
+
   resources :users
   resources :posts
   resources :cities
   
-
 
 =begin
 
