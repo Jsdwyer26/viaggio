@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
   put 'users/:id' => 'users#update'
 
-  resources :users
-  resources :posts
-  resources :cities
+  resources :users, :except => [:index] 
+  resources :posts, :except => [:index] 
+  resources :cities, :except => [:index] 
   
 
 =begin
