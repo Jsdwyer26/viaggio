@@ -44,7 +44,7 @@ class CitiesController < ApplicationController
   # PATCH/PUT /cities/1.json
   def update
     respond_to do |format|
-      city_params = params.require(:city).permit(:name, :nickName)
+      city_params = params.require(:city).permit(:name, :nickName, :image)
       @city = City.find(params[:id])
       if @city.update(city_params)
         format.html { redirect_to @city, notice: 'City was successfully updated.' }
@@ -69,6 +69,6 @@ class CitiesController < ApplicationController
 
   private
     def city_params
-      params.require(:city).permit(:name, :nickName)
+      params.require(:city).permit(:name, :nickName, :image)
     end
 end
