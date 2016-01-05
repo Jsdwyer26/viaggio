@@ -12,6 +12,12 @@
   <tbody>
     <% @cities.each do |city| %>
       <tr>
+        <td><%= "Name: #{city.name}" %></td>
+      </tr>
+      <tr>
+        <td><%= "Nickname: #{city.nickName}" %></td>
+      </tr>
+      <tr>
         <td><%= link_to 'Show', city %></td>
         <td><%= link_to 'Edit', edit_city_path(city) %></td>
         <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>
