@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://cdn6.fedobe.com/wp-content/uploads/2012/09/Cat-Hat-Glasses-Facebook-Profile-Timeline-Cover.jpg" height="500" width="500" alt="Profile Picture">
+      <div class="caption">
+      <h3><%= current_user.name %> </h3>
+        <p><%= current_user.current_city %></p>
+        <p><%= link_to 'Edit', edit_user_path(@user), :class =>"btn btn-primary"%></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
