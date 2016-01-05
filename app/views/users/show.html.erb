@@ -13,7 +13,7 @@
   <div class="col-md-6">
   <% @posts.each do |p| %>
   <div class="thumbnail">
-   <h4><%= p.title %></h4>
+   <h4><%= link_to p.title, post_path(p) %></h4>
   <p><%= p.body %></p>
   <p><small><%= p.created_at.strftime("%A, %B %d") %></small></p>
   </div>
