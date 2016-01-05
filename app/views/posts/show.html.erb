@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-	<div class= "col-md-6">
-		<p><%= @post.title %></p>
-		<hr>
+	<div class= "col-md-6 col-md-offset-3">
+		<h2><%= @post.title.titleize %></h2>
+		<br><br />
 		<p><%= @post.body %></p>
-
-		<%= link_to 'Edit', edit_post_path(@post) %> |
-		<%= link_to 'Back', posts_path %>
+		<hr>
+		<%= link_to 'Edit', edit_post_path(@post), class: "btn"  %> 
+		<%= link_to 'Back', posts_path, class: "btn" %>
 	</div>
+</div>	
