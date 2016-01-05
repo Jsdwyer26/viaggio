@@ -14,12 +14,12 @@
       <% end %>
 
       <div class="form-group">
-        <%= f.text_field :title, class: "form-control", placeholder: "title" %>
+        <%= f.text_field :title, class: "form-control", autofocus: true, placeholder: "title" %>
       </div>
       <div class="form-group">  
-        <%= f.text_area :body, class: "form-control",  placeholder: "body", rows: "6" %>
+        <%= f.text_area :body, class: "form-control focus",  placeholder: "body", rows: "6" %>
       </div>
-        <%= f.submit "Add Post", class: "btn btn-block btn-default" %>
+        <%= f.submit "Post", class: "btn btn-block btn-primary" %>
       </div>
     <% end %>
 
