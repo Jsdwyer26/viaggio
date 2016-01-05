@@ -17,6 +17,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+	margin-top: 75px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: skyblue;
+	padding: 0;
+}
+
 .city-banner {
 	width: 100%;
 	margin: 0 auto;
@@ -35,12 +43,6 @@
 #nav-login {
 	margin-top: 15px;
 	text-align: right;
-}
-
-body {
-	margin-top: 75px;
-	background-color: skyblue;
-	padding: 0;
 }
 
 .col-xs-2 {

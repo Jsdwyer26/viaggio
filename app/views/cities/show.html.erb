@@ -1,23 +1,22 @@
-<div class="row"><%= image_tag "#{@city.image}(:large)" %></div>
-<div class="row" id="city-name"><%= @city.name %></div>
+<div class="row">
+	<%= image_tag "#{@city.image}(:large)" %>
+</div>
+<div class="row" id="city-name">
+	<%= @city.name %>
+</div>
 <div class="row">
 	<%= "Nickname: #{@city.nickName}" %>
-	<%= link_to 'New Post', new_post_path, class: "btn btn-primary btn-sm" %>
+	<%= link_to 'New Post', new_post_path, class: "btn btn-primary btn-xs" %>
 </div>
 <br>
-<div class="row">
-	
-</div>
-
 <div class="media">
 	<% @posts.each do |p| %>
 		<div class="thumbnail">
 			<div class="media-left">
-				<img class="media-object" src="https://image.freepik.com/free-icon/tall-buildings-in-a-city_318-41220.png" width="35" alt="...">
+				<img class="media-object" src="https://image.freepik.com/free-icon/tall-buildings-in-a-city_318-41220.png" width="35">
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading"><%= link_to p.title, post_path(p.id) %></h4>
-				<p><%= p.city_id %></p>
 				<p><%= p.body %></p>
 			</div>
 		</div>
