@@ -33,6 +33,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
+      flash[:notice] = "Not registered, try again."
       redirect_to '/signup'
     end
   end
