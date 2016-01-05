@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    @city_names = City.all
+    @city_names = City.all.pluck(:name)
   end
 
 
