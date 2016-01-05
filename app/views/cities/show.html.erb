@@ -1,18 +1,24 @@
 <div class="row" id="city-name"><%= @city.name %></div>
-<div class="row"><%= "Nickname: #{@city.nickName}" %></div>
-
 <div class="row">
-	<%= link_to 'New Post', new_post_path, class: "btn btn-primary" %>
+	<%= "Nickname: #{@city.nickName}" %>
+	<%= link_to 'New Post', new_post_path, class: "btn btn-primary btn-sm" %>
+</div>
+<br>
+<div class="row">
+	
 </div>
 
-<div class="row">
+<div class="media">
 	<% @posts.each do |p| %>
-		<%= p.title %>
+		<div class="thumbnail">
+			<div class="media-left">
+				<img class="media-object" src="https://image.freepik.com/free-icon/tall-buildings-in-a-city_318-41220.png" width="35" alt="...">
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading"><%= link_to p.title, post_path(p.id) %></h4>
+				<p><%= p.city_id %></p>
+				<p><%= p.body %></p>
+			</div>
+		</div>
 	<% end %>
 </div>
-
-
-
-
-<%= link_to 'Edit', edit_city_path(@city) %> |
-<%= link_to 'Back', cities_path %>
