@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viaggio</title>
+  <title><%= t('global.site_title')%></title>
   <link type="text/css" rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -19,16 +19,16 @@
     </div>    
         <ul class="nav navbar-nav navbar-left">
         <% if current_user %>
-            <li class="navbar-text">Welcome, <%= current_user.name.titleize %>!</li>
+            <li class="navbar-text">  <%= t('global.greet', user: current_user.name.titleize) %>!</li>
         <% end %>    
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if current_user %>
-            <li><%= link_to "Profile", user_path(current_user) %></li>
-            <li><%= link_to "Logout", '/logout' %></li>
+            <li><%= link_to t('global.profile'), user_path(current_user) %></li>
+            <li><%= link_to t('global.logout'), '/logout' %></li>
           <% else %>  
-            <li><%= link_to 'Login', '/login' %></li> 
-            <li><%= link_to 'Signup', '/signup' %></li>
+            <li><%= link_to t('global.login'), '/login' %></li> 
+            <li><%= link_to t('global.signup'), '/signup' %></li>
           <% end %>
 
         </ul>

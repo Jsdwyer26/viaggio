@@ -33,7 +33,7 @@ en:
     #app
     profile: "Profile" 
     #app
-    session: "session"
+    login: "Login"
     #app
     signup: "Signup"
     #app
@@ -45,22 +45,6 @@ en:
     nick_name: "Nick-Name"
     city: "%{city}"
 
-  session:
-    submit: "Submit"
-    email: "Email"
-    login: "Login"
-
-  user:
-    edit_user: "Editing User"
-    signup: "Signup!"
-    name_signup: "Name:"
-    email_signup: "Email:"
-    current_city: "Current City:"
-    password: "Password Confirmation"
-    password_confirmation: "Password Confirmation"
-    user.profile_picture: "Profile Picture"
-    submit: "Submit"
-
   cities:
     city: "%{city}"
     nick_name: "%{nick_name}"
@@ -71,12 +55,7 @@ en:
     cities: "Post"
 
   posts:
-    show_post: "View Post"
-    #edit view
-    post_city_review: "Post City Review"
-    all_posts: "All Posts"
-    edit: "Edit Post"
-    update_post: "Update Post"
+    edit: "posts"
     category: "Pick One"
     title: "Title"
     view_title: "{%post-title)"

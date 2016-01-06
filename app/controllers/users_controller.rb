@@ -45,9 +45,12 @@ class UsersController < ApplicationController
   def update
   @user = current_user
   user_params = params.require(:user).permit(:name,:email,:current_city,:image)
+  puts user_params
+  puts @user.update_attributes(user_params)
   if @user.update_attributes(user_params)
     redirect_to user_path(@user)
   else 
+    flash[:notice] = @user.errors.map{|k,v| "#{k} #{v}".capitalize}
     redirect_to edit_user_path
   end
   end

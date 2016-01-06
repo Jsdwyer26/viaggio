@@ -2,17 +2,17 @@
 
 <%= form_for @city, html: { multipart: true } do |f| %>
 	<div class="form-group">
-	    <%= f.text_field :name, class: "form-control", autofocus: true, placeholder: "name" %>
+	    <%= f.text_field :name, class: "form-control", autofocus: true, placeholder: t('cities.name') %>
 	</div>
 	<div class="form-group">  
-		<%= f.text_field :nickName, class: "form-control focus",  placeholder: "nickname" %>
+		<%= f.text_field :nickName, class: "form-control focus",  placeholder: t('cities.nick_name') %>
 	</div>
 	<div class="form-group">  
 		<%= f.file_field :image %>
 	</div>
 	<div class="form-group">
-		<%= f.submit "Post", class: "btn btn-primary" %>
+		<%= f.submit t('cities.post'), class: "btn btn-primary" %>
 	</div>
 <% end %>
 
-<%= link_to 'Back', cities_path %>
+<%= link_to t('global.back'), cities_path %>

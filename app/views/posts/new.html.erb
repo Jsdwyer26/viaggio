@@ -1,16 +1,17 @@
-<h1 class="text-center">Post City Review</h1>
+<h1 class="text-center"><%=t("posts.post_city_review")%></h1>
 <hr>
 
 <%= form_for(@post) do |f| %>
 
-  <%= f.collection_select :city_id, @city_names, :to_s, :to_s, { :include_blank => false }, {class: 'form-control', placeholder: 'Choose Category'} %>
+  <%= f.collection_select :city_id, @city_names, :to_s, :to_s, { :include_blank => true }, {class: 'form-control', autofocus: true, placeholder: t('posts.category') } %>
+
   <div class="form-group">
-    <%= f.text_field :title, class: "form-control", autofocus: true, placeholder: "title" %>
+    <%= f.text_field :title, class: "form-control",  placeholder: t('posts.title') %>
   </div>
   <div class="form-group">  
-    <%= f.text_area :body, class: "form-control focus",  placeholder: "body", rows: "6" %>
+    <%= f.text_area :body, class: "form-control focus",  placeholder: t('posts.body'), rows: "6" %>
   </div>
   <div>
-    <%= f.submit "Post", class: "btn btn-block btn-primary" %>
+    <%= f.submit t('posts.post'), class: "btn btn-block btn-primary" %>
   </div>
 <% end %>

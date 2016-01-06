@@ -1,16 +1,16 @@
-<h1>Editing User</h1>
+<h1><%=t("user.edit_user")%></h1>
 
 <%= form_for @user do |f| %>
 <div class= "row">
  <div class="col-sm-6">
-  Name: <%= f.text_field :name, :class =>"form-control"%>
-  Email: <%= f.text_field :email, :class =>"form-control" %>
-  Profile Picture: <%= f.file_field :image %>
-  Current City: <%= f.text_field :current_city, :class =>"form-control"%>
-  <%= f.submit "Submit", :class =>"btn btn-primary" %>
+  <%= t('user.name_signup') %> <%= f.text_field :name, :class =>"form-control"%>
+  <%= t('user.email_signup') %> <%= f.text_field :email, :class =>"form-control" %>
+  <%= t('user.profile_picture') %><%= f.file_field :image %>
+  <%= t('user.current_city') %><%= f.text_field :current_city, :class =>"form-control"%>
+  <%= f.submit t('user.submit'), :class =>"btn btn-primary" %>
   <% end %>
   </div>
   </div>
   </br>
-<%= link_to 'Back', @user, :class =>"btn btn-primary" %> 
+<%= link_to t("global.back"), @user, :class =>"btn btn-primary" %> 
 

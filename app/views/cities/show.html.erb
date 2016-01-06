@@ -2,12 +2,13 @@
 	<%= image_tag "#{@city.image}(:large)" %>
 </div>
 <div class="row" id="city-name">
-	<%= @city.name %>
+	<%= t('global.city', city: @city.name) %>
 </div>
 <div class="row">
-	<%= 'aka "'+@city.nickName+'" / ' %>
-	<%= link_to "WikiTravel", "http://wikitravel.org/en/#{@city.name}" %><%= " / " %>
-	<%= link_to 'New Post', new_post_path, class: "btn btn-primary btn-xs" %>
+
+	<%= t('cities.nick_name', nick_name: @city.nickName) + ' / ' %>
+	<%= link_to 'WikiTravel', "http://wikitravel.org/en/#{@city.name}" %><%= ' / ' %>
+
 </div>
 <br>
 <div class="media">
