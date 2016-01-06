@@ -6,9 +6,9 @@
 </div>
 <div class="row">
 
-	<%= t('cities.nick_name', nick_name: @city.nickName) + '/' %>
-	"<%= link_to 'WikiTravel', 'http://wikitravel.org/en/#{@city.name}' %><%= ' / ' %>"
-	<%= link_to t('cities.new_post'), new_post_path, class: "btn btn-primary btn-xs" %>
+	<%= t('cities.nick_name', nick_name: @city.nickName) + ' / ' %>
+	<%= link_to 'WikiTravel', 'http://wikitravel.org/en/#{@city.name}' %><%= ' / ' %>
+
 </div>
 <br>
 <div class="media">
