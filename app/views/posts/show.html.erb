@@ -6,8 +6,8 @@
 		<p class="lead"><%= @post.body %></p>
 		<footer><b><%= @post.created_at.strftime("  %D")%></footer>
 		<hr>
-		<%= link_to 'Edit', edit_post_path(@post), class: "btn"  %> 
-		<%= link_to 'All Posts', posts_path, class: "btn" %>
+		<%= link_to t('global.edit'), edit_post_path(@post), class: "btn"  %> 
+
 
 	</div>
 </div>	
