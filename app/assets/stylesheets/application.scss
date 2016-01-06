@@ -36,6 +36,17 @@ footer {
 	text-align: center; 
 }
 
+.row {
+	width: 100%;
+}
+.col-md-2 {
+	padding: 5px;
+}
+.logo-banner {
+	text-align: center; 
+ 	margin: 0 auto; 
+ 	display: block;
+}
 .city-small {
  	width: 95%;
  	border-radius: 5%; 
@@ -46,7 +57,7 @@ footer {
 	background-position: right top;
 	width: 100%;
 	height: 500px;
-	background-size: 100% 100%;
+	background-size: 100%;
  }
 .headline {
  	font-size: 6em;
@@ -66,10 +77,6 @@ footer {
 	margin: 0 auto;
 }
 
-.col-xs-2 {
-	margin-top: 15px;
-	margin-left: 18px;
-}
 .btn{
   color: #ffffff; 
   background-color: #634271; 
@@ -80,3 +87,4 @@ footer {
 	background-color: #634290;
 	border-color: #130269;
 }
+
