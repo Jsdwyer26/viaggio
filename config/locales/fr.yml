@@ -20,9 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 #key(*) / value(erb)
-en:
+fr:
   global: 
-    site_title: "Viaggio"
+    site_title: "Viaggio-French"
     view: "View"
     edit: "Edit"
     delete: "Delete"

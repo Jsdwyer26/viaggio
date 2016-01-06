@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
   put 'users/:id' => 'users#update'
 
+  put '/language/:locale' => 'language#update'
+
+
   resources :users, :except => [:index] 
   resources :posts, :except => [:index] 
   resources :cities, :except => [:index] 
