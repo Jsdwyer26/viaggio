@@ -22,6 +22,7 @@
 #key(*) / value(erb)
 en:
   global: 
+    site_title: "Viaggio"
     view: "View"
     edit: "Edit"
     delete: "Delete"
@@ -48,7 +49,17 @@ en:
     city: "%{city}"
     nick_name: "%{nick_name}"
     new_post: "New Post"
+    name: "Name"
     wiki_travel_html: "<%= link_to 'WikiTravel', 'http://wikitravel.org/en/#{@city.name}' %><%= ' / ' %>"
+    nick_name: "Nick-Name"
+    cities: "Post"
+
+  posts:
+    category: "Pick One"
+    title: "Title"
+    view_title: "{%post-title)"
+    body: "Body"
+    post: "Add Post"
 
   homepage:
     call_to_action: "Explore cities and add your tips!"
