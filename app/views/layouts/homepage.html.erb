@@ -1,9 +1,9 @@
 <div class="banner">
-	<div>
 		<br>
-		<h1 class="headline">Viaggio</h1>
+		<div>
+			<%= image_tag "logo-large-white.png", class: "logo-banner" %>
+		</div>
 		<p class="call-to-action">Explore cities and add your tips!</p>
-	</div>
 </div>
 <br>
 <center>
@@ -13,7 +13,7 @@
 			<h3><%= link_to "San Francisco", "/cities/#{@sanfrancisco}"%></h3>
 		</div>
 		<div>
-			<%= image_tag "san-francisco-small.jpg", class: "city-small" %>
+			<%= link_to(image_tag("san-francisco-small.jpg", class: "city-small"), "/cities/#{@sanfrancisco}") %>
 		</div>
 	</div>
 	<div class="col-md-2">
@@ -21,7 +21,7 @@
 			<h3><%= link_to "Seattle", "/cities/#{@seattle}"%></h3>
 		</div>
 		<div>
-			<%= image_tag "seattle-small.jpg", class: "city-small" %>
+			<%= link_to(image_tag("seattle-small.jpg", class: "city-small"), "/cities/#{@seattle}") %>
 		</div>
 	</div>
 	<div class="col-md-2">
@@ -29,7 +29,7 @@
 			<h3><%= link_to "Santa Barbara", "/cities/#{@santabarbara}"%></h3>
 		</div>
 		<div>
-			<%= image_tag "santa-barbara-small.jpg", class: "city-small" %>
+			<%= link_to(image_tag("santa-barbara-small.jpg", class: "city-small"), "/cities/#{@santabarbara}") %>
 		</div>
 	</div>
 	<div class="col-md-2">
@@ -37,7 +37,7 @@
 			<h3><%= link_to "Miami", "/cities/#{@miami}"%></h3>
 		</div>
 		<div>
-			<%= image_tag "miami-small.jpg", class: "city-small" %>
+			<%= link_to(image_tag("miami-small.jpg", class: "city-small"), "/cities/#{@miami}")%>
 		</div>
 	</div>
 	<div class="col-md-2">
@@ -45,8 +45,8 @@
 			<h3><%= link_to "New York", "/cities/#{@newyork}"%></h3>
 		</div>
 		<div>
-			<%= image_tag "new-york-small.jpg", class: "city-small" %>
+			<%= link_to(image_tag("new-york-small.jpg", class: "city-small"), "/cities/#{@newyork}") %>
 		</div>
 	</div>
-	</center>
+</center>
 	<footer>copywrite Viaggo 2016</footer>
