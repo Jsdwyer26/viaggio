@@ -1,13 +1,18 @@
 <h1><%=t('user.signup')%></h1>
+<div class="row">
+	<div class= "col-md-6 col-md-offset-3">
 
 <%= form_for :user, url: '/users', html: { multipart: true } do |f| %>
 
-  <%= t('user.name_signup') %> <%= f.text_field :name %>
-  <%= t('user.email_signup') %> <%= f.text_field :email %>
-  <%= f.file_field :image %> 
-  <%= t('user.current_city') %><%= f.text_field :current_city%>
-  <%= t('user.password') %><%= f.password_field :password %>
-  <%= t('password_confirmation') %><%= f.password_field :password_confirmation %>
-  <%= f.submit t('user.submit') %>
+  <%= t('user.name_signup') %> <%= f.text_field :name, class: "form-control", placeholder: "John Doe" %>
+  <%= t('user.email_signup') %> <%= f.text_field :email, class: "form-control", placeholder: "JD@gmail.com" %>
+  <%= t('user.current_city') %><%= f.text_field :current_city, class: "form-control", placeholder: "San Francisco, CA"%>
+  <%= t('user.password') %><%= f.password_field :password, class: "form-control" %>
+  <%= t('password_confirmation') %><%= f.password_field :password_confirmation, class: "form-control" %>
+  Profile Image: <%= f.file_field :image %> 
+  </br>
+  <%= f.submit t('user.submit'), class: "btn btn-primary" %>
 
 <% end %>
+</div>
+</div>
