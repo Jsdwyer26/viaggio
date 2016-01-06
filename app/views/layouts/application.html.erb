@@ -37,10 +37,17 @@
 </nav>
 
 <% if flash[:notice] %>
-<div class="alert">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <%= flash[:notice] %>
-</div>
+  <div class="alert">
+    <div class="alert alert-danger" role="alert">
+      <% if flash[:notice].class != String %>
+        <% flash[:notice].each do |f| %><br>
+          <%= f %>
+        <% end %>
+      <% else %>
+        <%= flash[:notice] %>
+      <% end %>
+    </div>
+  </div>
 <% end %>
 
 <%= yield %>

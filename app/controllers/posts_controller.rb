@@ -31,17 +31,22 @@ class PostsController < ApplicationController
   def create
     post_params = params.require(:post).permit(:title, :body, :city_id)
     @post = Post.new(post_params)
-    @post.city_id = City.find_by_name(post_params['city_id']).id
+    @post.city_id = post_params['city_id'] != "" ? City.find_by_name(post_params['city_id']).id : ""
     @post.user_id = current_user.id
-    respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
+        respond_to do |format|
+          format.html { redirect_to @post, notice: 'Post was successfully created.' }
+          format.json { render :show, status: :created, location: @post }
+        end
       else
-        format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        respond_to do |format|
+          error_messages = @post.errors
+          @post = Post.new
+          @city_names = City.all.pluck(:name)
+          format.html { redirect_to "/posts/new", notice: error_messages.map{|k,v| "#{k} #{v}".capitalize}  }
+          format.json { render json: @post.errors, status: :unprocessable_entity }
+        end
       end
-    end
   end
 
   def update
