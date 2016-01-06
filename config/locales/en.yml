@@ -20,4 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello World"
+  global: "view"
+  edit: "edit"
+  delete: "delete"
+  new: "new"
+  post: "post"
+  welcome: "Welcome, "

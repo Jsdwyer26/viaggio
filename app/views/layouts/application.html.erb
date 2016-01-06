@@ -18,7 +18,7 @@
     </div>    
         <ul class="nav navbar-nav navbar-left">
         <% if current_user %>
-            <li class="navbar-text">Welcome, <%= current_user.name.titleize %>!</li>
+            <li class="navbar-text">t("welcome") <%= current_user.name.titleize %>!</li>
         <% end %>    
         </ul>
         <ul class="nav navbar-nav navbar-right">
