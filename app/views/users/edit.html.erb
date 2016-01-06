@@ -1,12 +1,12 @@
 <h1><%=t("user.edit_user")%></h1>
 
 <%= form_for @user do |f| %>
-<div class= "row">
- <div class="col-sm-6">
+<div class="row">
+  <div class= "col-md-6 col-md-offset-3">
   <%= t('user.name_signup') %> <%= f.text_field :name, :class =>"form-control"%>
   <%= t('user.email_signup') %> <%= f.text_field :email, :class =>"form-control" %>
-  <%= t('user.profile_picture') %><%= f.file_field :image %>
   <%= t('user.current_city') %><%= f.text_field :current_city, :class =>"form-control"%>
+   <%= t('user.profile_picture') %><%= f.file_field :image %>
   </br>
   <%= f.submit t('user.submit'), :class =>"btn btn-primary" %>
   <% end %>

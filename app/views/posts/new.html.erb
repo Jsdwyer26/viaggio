@@ -1,6 +1,7 @@
 <h1 class="text-center"><%=t("posts.post_city_review")%></h1>
 <hr>
-
+<div class="row">
+  <div class= "col-md-6 col-md-offset-3">
 <%= form_for(@post) do |f| %>
 
   <%= f.collection_select :city_id, @city_names, :to_s, :to_s, { :include_blank => true }, {class: 'form-control', autofocus: true, placeholder: t('posts.category') } %>
@@ -15,3 +16,5 @@
     <%= f.submit t('posts.post'), class: "btn btn-block btn-primary" %>
   </div>
 <% end %>
+</div>
+</div>
