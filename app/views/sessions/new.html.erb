@@ -1,9 +1,9 @@
-<h1>Login</h1>
+<h1><%= t('session.login') %></h1>
 
 <%= form_tag '/login' do %>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
+  <%= t('session.email') %> <%= text_field_tag :email %>
+  <%= t('session.password') %> <%= password_field_tag :password %>
+  <%= submit_tag t("session.submit") %>
 
 <% end %>

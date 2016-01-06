@@ -1,20 +1,69 @@
-fr:
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+#key(*) / value(erb)
+en:
   global: 
+    site_title: "Viaggio"
     view: "View"
     edit: "Edit"
     delete: "Delete"
     new: "New"
     post: "Post"
+    #app
     greet: "Welcome, %{user}"
-    profile: "Profil" 
+    #app
+    profile: "Profile" 
+    #app
     login: "Login"
+    #app
     signup: "Signup"
+    #app
     title: "Title"
     body: "Body"
     show: "Show"
     back: "Back"
     name: "Name"
-    nickName: "Nick-Name"
+    nick_name: "Nick-Name"
     city: "%{city}"
+
+  cities:
+    city: "%{city}"
+    nick_name: "%{nick_name}"
+    new_post: "New Post"
+    name: "Name"
+    wiki_travel_html: "<%= link_to 'WikiTravel', 'http://wikitravel.org/en/#{@city.name}' %><%= ' / ' %>"
+    nick_name: "Nick-Name"
+    cities: "Post"
+
+  posts:
+    edit: "posts"
+    category: "Pick One"
+    title: "Title"
+    view_title: "{%post-title)"
+    body: "Body"
+    post: "Add Post"
+
   homepage:
     call_to_action: "Explore cities and add your tips!"
+    city: "%{city}"
+
+
