@@ -3,7 +3,7 @@
 		<div>
 			<%= image_tag "logo-large-white.png", class: "logo-banner" %>
 		</div>
-		<p class="call-to-action">Explore cities and add your tips!</p>
+		<p class="call-to-action"><%= t('homepage.call_to_action')%></p>
 	</div>
 </div>
 <br>
@@ -11,7 +11,7 @@
 <div class="row">
 	<div class="col-md-2 col-md-offset-1">
 		<div>
-			<h3><%= link_to "San Francisco", "/cities/#{@sanfrancisco}"%></h3>
+			<h3><%= link_to t('homepage.city', city: 'San Francisco'), "/cities/#{@sanfrancisco}" %></h3>
 		</div>
 		<div>
 			<%= link_to(image_tag("san-francisco-small.jpg", class: "city-small"), "/cities/#{@sanfrancisco}") %>
@@ -19,7 +19,7 @@
 	</div>
 	<div class="col-md-2">
 		<div>
-			<h3><%= link_to "Seattle", "/cities/#{@seattle}"%></h3>
+			<h3><%= link_to t('homepage.city', city: 'Seattle'), "/cities/#{@seattle}"%></h3>
 		</div>
 		<div>
 			<%= link_to(image_tag("seattle-small.jpg", class: "city-small"), "/cities/#{@seattle}") %>
@@ -27,7 +27,7 @@
 	</div>
 	<div class="col-md-2">
 		<div>
-			<h3><%= link_to "Santa Barbara", "/cities/#{@santabarbara}"%></h3>
+			<h3><%= link_to t('homepage.city', city: 'Santa Barbara'), "/cities/#{@santabarbara}"%></h3>
 		</div>
 		<div>
 			<%= link_to(image_tag("santa-barbara-small.jpg", class: "city-small"), "/cities/#{@santabarbara}") %>
@@ -35,7 +35,7 @@
 	</div>
 	<div class="col-md-2">
 		<div>
-			<h3><%= link_to "Miami", "/cities/#{@miami}"%></h3>
+			<h3><%= link_to t('homepage.city', city: 'Miami'), "/cities/#{@miami}"%></h3></h3>
 		</div>
 		<div>
 			<%= link_to(image_tag("miami-small.jpg", class: "city-small"), "/cities/#{@miami}")%>
@@ -43,7 +43,7 @@
 	</div>
 	<div class="col-md-2">
 		<div>
-			<h3><%= link_to "New York", "/cities/#{@newyork}"%></h3>
+			<h3><%= link_to t('homepage.city', city: 'New York'), "/cities/#{@newyork}"%></h3>
 		</div>
 		<div>
 			<%= link_to(image_tag("new-york-small.jpg", class: "city-small"), "/cities/#{@newyork}") %>
