@@ -16,20 +16,31 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Hind);
 
 body {
 	margin-top: 75px;
 	margin-left: 50px;
 	margin-right: 50px;
-	background-color: skyblue;
+	background-color: white;
 	padding: 0;
+	font-family: 'Hind', sans-serif;
+	color: #634271;
+}
+a {
+	font-family: 'Hind', sans-serif;
+	color: #634271;
+}
+footer {
+	margin: 100px;
+	text-align: center; 
 }
 
 .city-small {
  	width: 95%;
  	border-radius: 5%; 
  }
- .banner {
+.banner {
  	background-image: url("hong-kong-large.jpg");
  	background-repeat: no-repeat;
 	background-position: right top;
@@ -37,8 +48,14 @@ body {
 	height: 500px;
 	background-size: 100% 100%;
  }
- .call-to-action {
- 	font-size: 4em;
+.headline {
+ 	font-size: 6em;
+ 	color: white;
+ 	text-align: center; 
+ 	margin: 30px 0 0 20px; 
+ }
+.call-to-action {
+ 	font-size: 3em;
  	color: white;
  	text-align: center; 
  	margin: 0 auto; 
@@ -52,9 +69,4 @@ body {
 .col-xs-2 {
 	margin-top: 15px;
 	margin-left: 18px;
-}
-
-#city-name {
-	font-size: 50px;
-	font-weight: bold;
 }
