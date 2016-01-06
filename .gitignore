@@ -17,4 +17,5 @@
 /tmp
 
 * hiding images from github
-public/system/cities/images/ 
+public/system/cities/
+public/system/users/
