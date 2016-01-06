@@ -4,11 +4,20 @@
     <div class="thumbnail">
       <%= image_tag @user.image.url(:large) %>
       <div class="caption">
-      <h3><%= current_user.name %> </h3>
-        <p><%= current_user.current_city %></p>
+      <h3><%= @user.name %> </h3>
+        <p><%= @user.current_city %></p>
         <p><%= link_to 'Edit', edit_user_path(@user), :class =>"btn btn-primary"%></p>
       </div>
     </div>
+  </div>
+  <div class="col-md-6">
+  <% @posts.each do |p| %>
+  <div class="thumbnail">
+   <h4><%= link_to p.title, post_path(p) %></h4>
+  <p><%= p.body %></p>
+  <p><small><%= p.created_at.strftime("%A, %B %d") %></small></p>
+  </div>
+  <% end %>
   </div>
 </div>
 

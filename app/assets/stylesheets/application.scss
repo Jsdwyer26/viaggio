@@ -17,17 +17,53 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+	margin-top: 75px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: skyblue;
+	padding: 0;
+}
+
 .city-banner {
 	width: 100%;
 	margin: 0 auto;
 }
+<<<<<<< HEAD
 
-
-body {
-	margin-top: 75px;
-	background-color: skyblue;
-	padding: 0;
+=======
+.city-small {
+	width: 95%;
+	border-radius: 5%; 
 }
+.banner {
+	background-image: url("hong-kong-large.jpg");
+	background-repeat: no-repeat;
+  background-position: right top;
+  width: 100%;
+  height: 500px; 
+}
+.call-to-action {
+	font-size: 4em;
+	color: white;
+	text-align: center; 
+	margin: 0 auto; 
+}
+#nav-row {
+	margin-left: 20px;
+}
+
+#nav-title {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#nav-login {
+	margin-top: 15px;
+	text-align: right;
+}
+>>>>>>> master
 
 .col-xs-2 {
 	margin-top: 15px;

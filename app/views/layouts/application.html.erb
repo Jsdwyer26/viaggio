@@ -10,6 +10,7 @@
 <body>
 
 
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -34,6 +35,13 @@
     </div>
   </div>  
 </nav>
+
+<% if flash[:notice] %>
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <%= flash[:notice] %>
+</div>
+<% end %>
 
 <%= yield %>
 

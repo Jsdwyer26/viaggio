@@ -3,7 +3,7 @@
 <div class="row">
 	<div class= "col-md-6 col-md-offset-3">
 
-		<h2><%= @post.title.titleize %><small><%= @city %></small></h2>
+		<h2><%= @post.title.titleize %></h2><small><% if !@post.city_id.nil? %> <%= City.find(@post.city_id).name %> <% end %></small>
 		<br>
 		<p class="lead"><%= @post.body %></p>
 		<footer><b><%= @post.created_at.strftime("  %D")%></footer>

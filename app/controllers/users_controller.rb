@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    @posts = @user.posts
   end
 
   # GET /users/new
@@ -33,6 +34,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
+      flash[:notice] = "Not registered, try again."
       redirect_to '/signup'
     end
   end
