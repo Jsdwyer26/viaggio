@@ -56,9 +56,9 @@ en:
     name_signup: "Name:"
     email_signup: "Email:"
     current_city: "Current City:"
-    password: "Password Confirmation"
-    password_confirmation: "Password Confirmation"
-    user.profile_picture: "Profile Picture"
+    password: "Password:"
+    password_confirmation: "Password Confirmation:"
+    user.profile_picture: "Profile Picture:"
     submit: "Submit"
 
   cities:
