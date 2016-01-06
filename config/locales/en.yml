@@ -19,6 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+#key(*) / value(erb)
 en:
   global: 
     view: "View"
@@ -26,9 +27,31 @@ en:
     delete: "Delete"
     new: "New"
     post: "Post"
+    #app
     greet: "Welcome, %{user}"
+    #app
     profile: "Profile" 
+    #app
     login: "Login"
+    #app
     signup: "Signup"
+    #app
+    title: "Title"
+    body: "Body"
+    show: "Show"
+    back: "Back"
+    name: "Name"
+    nick_name: "Nick-Name"
+    city: "%{city}"
+
+  cities:
+    city: "%{city}"
+    nick_name: "%{nick_name}"
+    new_post: "New Post"
+    wiki_travel_html: "<%= link_to 'WikiTravel', 'http://wikitravel.org/en/#{@city.name}' %><%= ' / ' %>"
+
+  homepage:
+    call_to_action: "Explore cities and add your tips!"
+    city: "%{city}"
 
 

@@ -6,12 +6,12 @@
   <%= f.collection_select :city_id, @city_names, :to_s, :to_s, { :include_blank => true }, {class: 'form-control', placeholder: 'Choose Category'} %>
 
   <div class="form-group">
-    <%= f.text_field :title, class: "form-control", autofocus: true, placeholder: "title" %>
+    <%= f.text_field :title, class: "form-control", autofocus: true, placeholder: t('global.title') %>
   </div>
   <div class="form-group">  
-    <%= f.text_area :body, class: "form-control focus",  placeholder: "body", rows: "6" %>
+    <%= f.text_area :body, class: "form-control focus",  placeholder: t('global.body'), rows: "6" %>
   </div>
   <div>
-    <%= f.submit "Post", class: "btn btn-block btn-primary" %>
+    <%= f.submit t('global.post'), class: "btn btn-block btn-primary" %>
   </div>
 <% end %>

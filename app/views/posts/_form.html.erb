@@ -4,10 +4,10 @@
     <%= form_for(@post) do |f| %>
 
       <div class="form-group">
-        <%= f.text_field :title, class: "form-control", autofocus: true, placeholder: "title" %>
+        <%= f.text_field :title, class: "form-control", autofocus: true, placeholder: t('global.title') %>
       </div>
       <div class="form-group">  
-        <%= f.text_area :body, class: "form-control focus",  placeholder: "body", rows: "6" %>
+        <%= f.text_area :body, class: "form-control focus",  placeholder: t('global.body'), rows: "6" %>
       </div>
       <div>
         <%= f.submit "Update", class: "btn btn-block btn-primary" %>

@@ -1,0 +1,20 @@
+fr:
+  global: 
+    view: "View"
+    edit: "Edit"
+    delete: "Delete"
+    new: "New"
+    post: "Post"
+    greet: "Welcome, %{user}"
+    profile: "Profil" 
+    login: "Login"
+    signup: "Signup"
+    title: "Title"
+    body: "Body"
+    show: "Show"
+    back: "Back"
+    name: "Name"
+    nickName: "Nick-Name"
+    city: "%{city}"
+  homepage:
+    call_to_action: "Explore cities and add your tips!"
