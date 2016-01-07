@@ -20,8 +20,8 @@
 
 body {
 	margin-top: 75px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 0px;
+	margin-right: 0px;
 	background-color: white;
 	padding: 0;
 	font-family: 'Hind', sans-serif;
@@ -35,7 +35,6 @@ footer {
 	margin: 100px;
 	text-align: center; 
 }
-
 .row {
 	width: 100%;
 }
@@ -56,8 +55,9 @@ footer {
  	background-repeat: no-repeat;
 	background-position: right top;
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	background-size: 100%;
+	margin: 0 auto;
  }
 .headline {
  	font-size: 6em;
@@ -83,8 +83,13 @@ footer {
   border-color: #130269; 
 
 }
-.btn:hover{
+.btn:hover {
 	background-color: #634290;
 	border-color: #130269;
+}
+.city-name a:hover {
+	text-decoration: none !important;
+	font-weight: bold; 
+	color: #ABABAB;
 }
 
