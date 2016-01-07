@@ -10,7 +10,7 @@
 <center>
 <div class="row">
 	<div class="col-md-2 col-md-offset-1">
-		<div>
+		<div class="city-name">
 			<h3><%= link_to t('homepage.city', city: 'San Francisco'), "/cities/#{@sanfrancisco}" %></h3>
 		</div>
 		<div>
@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="col-md-2">
-		<div>
+		<div class="city-name">
 			<h3><%= link_to t('homepage.city', city: 'Seattle'), "/cities/#{@seattle}"%></h3>
 		</div>
 		<div>
@@ -26,15 +26,15 @@
 		</div>
 	</div>
 	<div class="col-md-2">
-		<div>
+		<div class="city-name">
 			<h3><%= link_to t('homepage.city', city: 'Santa Barbara'), "/cities/#{@santabarbara}"%></h3>
 		</div>
-		<div>
+		<div class="city-name">
 			<%= link_to(image_tag("santa-barbara-small.jpg", class: "city-small"), "/cities/#{@santabarbara}") %>
 		</div>
 	</div>
 	<div class="col-md-2">
-		<div>
+		<div class="city-name">
 			<h3><%= link_to t('homepage.city', city: 'Miami'), "/cities/#{@miami}"%></h3></h3>
 		</div>
 		<div>
@@ -42,7 +42,7 @@
 		</div>
 	</div>
 	<div class="col-md-2">
-		<div>
+		<div class="city-name">
 			<h3><%= link_to t('homepage.city', city: 'New York'), "/cities/#{@newyork}"%></h3>
 		</div>
 		<div>
