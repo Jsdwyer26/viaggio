@@ -49,6 +49,15 @@ footer {
 .city-small {
  	width: 95%;
  	border-radius: 5%; 
+ 	 -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+          transition: all 1s ease;
+ }
+ .city-small:hover {
+ 	width: 102%;
+  	height: 102%;
  }
 .banner {
  	background-image: url("hong-kong-large.jpg");
