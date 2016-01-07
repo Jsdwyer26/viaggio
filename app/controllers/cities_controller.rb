@@ -12,6 +12,7 @@ class CitiesController < ApplicationController
   def show
     @city = City.find(params[:id])
     @posts = Post.where(city_id: @city.id)
+    @user = current_user
   end
 
   # GET /cities/new
