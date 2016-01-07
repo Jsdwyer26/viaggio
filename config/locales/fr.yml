@@ -20,18 +20,18 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 #key(*) / value(erb)
-en:
+fr:
   global: 
-    site_title: "Viaggio"
+    site_title: "Viaggio-French"
     view: "View"
     edit: "Edit"
     delete: "Delete"
     new: "New"
     post: "Post"
     #app
-    greet: "Welcome, %{user}"
+    greet: "Bongjour, %{user}"
     #app
-    profile: "Profile" 
+    profile: "Profil" 
     #app
     login: "Login"
     #app
@@ -48,11 +48,11 @@ en:
   cities:
     city: "%{city}"
     nick_name: "%{nick_name}"
-    new_post: "New Post"
+    new_post: "New Post-French"
     name: "Name"
     wiki_travel_html: "<%= link_to 'WikiTravel', 'http://wikitravel.org/en/#{@city.name}' %><%= ' / ' %>"
     nick_name: "Nick-Name"
-    cities: "Post"
+    cities: "Post-French"
 
   posts:
     edit: "posts"
@@ -63,7 +63,7 @@ en:
     post: "Add Post"
 
   homepage:
-    call_to_action: "Explore cities and add your tips!"
+    call_to_action: "Explore cities and add your tips!-French"
     city: "%{city}"
 
 

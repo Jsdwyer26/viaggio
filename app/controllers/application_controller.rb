@@ -6,7 +6,11 @@ class ApplicationController < ActionController::Base
 
   #Set the locale. key :en is default, files found in /config/locals
   def set_locale
-    I18n.locale = :en
+    if session && session[:locale]
+      I18n.locale = session[:locale]
+    else  
+      I18n.locale = :en
+    end
   end
 
   def current_user
