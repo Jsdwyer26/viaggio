@@ -18,7 +18,7 @@
 	<% @posts.each do |p| %>
 		<div class="thumbnail">
 			<div class="media-left">
-				<img class="media-object" src="https://image.freepik.com/free-icon/tall-buildings-in-a-city_318-41220.png" width="35">
+				<%= image_tag @user.image.url(:thumb) %>
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading"><%= link_to p.title, post_path(p.id) %></h4>
