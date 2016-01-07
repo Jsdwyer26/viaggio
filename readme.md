@@ -1,6 +1,6 @@
 #Viaagio
 -
-*Viaagio*, the Italian word for journey, is an online community for users to share and read advice on their favorite cities.
+*Viaggio*, the Italian word for journey, is an online community for users to share and read advice on their favorite cities.
 
 ##Technologies Used
 - Ruby language 
@@ -12,7 +12,7 @@
 - Bootstrap for css styling
 
 ##Find on Github
-Viaagio can be found on [Github](https://github.com/Jsdwyer26/viaggio)
+Viaggio can be found on [Github](https://github.com/Jsdwyer26/viaggio)
 
 ##How to Use 
 1. Visit the github page and clone this repo. 
@@ -28,7 +28,7 @@ Viaagio can be found on [Github](https://github.com/Jsdwyer26/viaggio)
 >![Homepage](http://i.imgur.com/emEvVyT.jpg)
 
 ##Features
-###Some of Viaago's top features include:
+###Some of Viaggio's top features include:
 
 - Users can add and update their profiles with:
 	- Profile Picture
