@@ -23,6 +23,7 @@
         <% end %>    
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "French", '/language/fr', method: :put  %> | <%= link_to "English", '/language/en', method: :put  %></li>
           <% if current_user %>
             <li><%= link_to t('global.profile'), user_path(current_user) %></li>
             <li><%= link_to t('global.logout'), '/logout' %></li>

@@ -2,7 +2,7 @@ class LanguageController < ApplicationController
 	
 	def update
     	session[:locale] = params[:locale]
-    	render text: "language updated", status: 201
+    	redirect_to(:back)
 	end
 
 end
