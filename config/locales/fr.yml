@@ -29,7 +29,7 @@ fr:
     new: "New"
     post: "Post"
     #app
-    greet: "Bongjour, %{user}"
+    greet: "Bonjour, %{user}"
     #app
     profile: "Profil" 
     #app
@@ -63,7 +63,7 @@ fr:
     post: "Add Post"
 
   homepage:
-    call_to_action: "Explore cities and add your tips!-French"
+    call_to_action: "Explorez des villes et ajoutez vos conseils"
     city: "%{city}"
 
 

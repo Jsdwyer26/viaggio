@@ -12,7 +12,7 @@
 
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
   <div class="container-fluid">
     <div class="navbar-header">
         <a href="/"><%= image_tag "logo.png" %></a>
@@ -23,7 +23,7 @@
         <% end %>    
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "French", '/language/fr', method: :put  %></li> || 
+          <li><%= link_to "Français", '/language/fr', method: :put  %></li>
           <li><%= link_to "English", '/language/en', method: :put  %></li>
           
           <% if current_user %>
