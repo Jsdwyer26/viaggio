@@ -1,4 +1,4 @@
-#Viaagio
+#Viaggio
 -
 *Viaggio*, the Italian word for journey, is an online community for users to share and read advice on their favorite cities.
 
@@ -19,7 +19,7 @@ Viaggio can be found on [Github](https://github.com/Jsdwyer26/viaggio)
  - `git clone https://github.com/Jsdwyer26/viaggio.git` 
 2. Start the Rails server. Done (typically) through:
  - Opening your terminal/Command Line
- - `~cd` into the viaagio directory
+ - `~cd` into the viaggio directory
  - Running the command `rails s`
 3. Open your web browser
 4. Navigate to http://localhost:3000  
